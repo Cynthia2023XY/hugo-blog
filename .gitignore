@@ -1,2 +1,13 @@
 .env
 .env.build
+
+# .DS_Store：忽略.DS_Store文件，这是macOS系统用来存储目录的自定义属性的隐藏文件。
+.DS_Store
+
+# npm
+# node_modules：忽略node_modules目录，这个目录通常包含npm安装的依赖包。
+node_modules
+
+# vscode
+#.vscode：忽略.vscode目录，这个目录通常包含VSCode的项目特定设置。
+.vscode 
