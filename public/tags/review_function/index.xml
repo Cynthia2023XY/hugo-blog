@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Review_function on My New Hugo Site</title>
+    <link>http://localhost:1313/tags/review_function/</link>
+    <description>Recent content in Review_function on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tags/review_function/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/posts/js%E5%AF%B9%E8%B1%A1%E5%AD%97%E9%9D%A2%E9%87%8Fobject-literal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/js%E5%AF%B9%E8%B1%A1%E5%AD%97%E9%9D%A2%E9%87%8Fobject-literal/</guid>
+      <description>#review/knowledge/code/js #review/function&#xA;在JavaScript中，有几种不同的方法来定义对象。 一种非常常见的方法是使用对象字面量，它通过在大括号内列出其属性来实现。&#xA;const object1 = { name: &amp;#39;Arto Hellas&amp;#39;, age: 35, education: &amp;#39;PhD&amp;#39;, } const object2 = { name: &amp;#39;Full Stack web application development&amp;#39;, level: &amp;#39;intermediate studies&amp;#39;, size: 5, } const object3 = { name: { first: &amp;#39;Dan&amp;#39;, last: &amp;#39;Abramov&amp;#39;, }, grades: [2, 3, 5, 3], department: &amp;#39;Stanford University&amp;#39;, } 属性的值可以是任何类型的，比如整数、字符串、数组、对象&amp;hellip;&amp;hellip;&#xA;title:js的对象字面量（object literal）看起来很像C++的结构体? JavaScript 的对象字面量确实在概念上与 C++ 中的结构体（struct）有一些相似之处，尽管它们在语法和使用上存在差异。以下是两者之间的一些相似点和不同点： ### 相似之处： 1. **数据结构**：两者都用于创建包含多个属性（或成员变量）的数据结构，这些属性可以是不同类型的数据。 2. **封装**：它们提供了一种封装数据的方式，使得数据和操作这些数据的函数或方法可以组合在一起。 3. **访问属性**：在两种结构中，属性都通过点符号（`.`）访问，例如 `object.name` 或 `structInstance.name`。 ### 不同之处： 1.</description>
+    </item>
+  </channel>
+</rss>

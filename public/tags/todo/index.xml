@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Todo on 阿雀的个人博客</title>
+    <title>Todo on My New Hugo Site</title>
     <link>http://localhost:1313/tags/todo/</link>
-    <description>Recent content in Todo on 阿雀的个人博客</description>
+    <description>Recent content in Todo on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <copyright>Cynthia Ding</copyright>
     <lastBuildDate>Sun, 18 Mar 2018 02:01:58 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/todo/index.xml" rel="self" type="application/rss+xml" />
     <item>

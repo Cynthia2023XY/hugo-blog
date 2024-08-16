@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Review_knowledge_code_practice on 阿雀的个人博客</title>
+    <title>Review_knowledge_code_practice on My New Hugo Site</title>
     <link>http://localhost:1313/tags/review_knowledge_code_practice/</link>
-    <description>Recent content in Review_knowledge_code_practice on 阿雀的个人博客</description>
+    <description>Recent content in Review_knowledge_code_practice on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <copyright>Cynthia Ding</copyright>
     <lastBuildDate>Wed, 14 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/review_knowledge_code_practice/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -14,7 +13,7 @@
       <link>http://localhost:1313/posts/%E6%B5%8B%E8%AF%95/</link>
       <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/%E6%B5%8B%E8%AF%95/</guid>
-      <description>纯文本可以正常上传&#xA;标签样式不能正确解析 #review/knowledge/code/practice&#xA;一级标题 二级标题 三级标题 四级标题 五级标题 六级标题 分割线测试&#xA;普通文本测试&#xA;==高亮文本测试==&#xA;加粗文本测试&#xA;斜体文本测试&#xA;下划线文本测试&#xA;删除线文本测试&#xA;css颜色文本测试&#xA;引用测试&#xA;代码块渲染测试&#xA;const App = () =&amp;gt; { const [left, setLeft] = useState(0) const [right, setRight] = useState(0) const [allClicks, setAll] = useState([]) const handleLeftClick = () =&amp;gt; { setAll(allClicks.concat(&amp;#39;L&amp;#39;)) setLeft(left + 1) } const handleRightClick = () =&amp;gt; { setAll(allClicks.concat(&amp;#39;R&amp;#39;)) setRight(right + 1) } return ( &amp;lt;div&amp;gt; {left} &amp;lt;button onClick={handleLeftClick}&amp;gt;left&amp;lt;/button&amp;gt; &amp;lt;button onClick={handleRightClick}&amp;gt;right&amp;lt;/button&amp;gt; {right} &amp;lt;p&amp;gt;{allClicks.</description>
+      <description>纯文本可以正常上传&#xA;标签样式不能正确解析 #review/knowledge/code/practice&#xA;一级标题 二级标题 三级标题 四级标题 五级标题 六级标题 分割线测试&#xA;普通文本测试&#xA;==高亮文本测试==&#xA;加粗文本测试&#xA;斜体文本测试&#xA;下划线文本测试&#xA;删除线文本测试&#xA;引用测试&#xA;代码块渲染测试&#xA;const App = () =&amp;gt; { const [left, setLeft] = useState(0) const [right, setRight] = useState(0) const [allClicks, setAll] = useState([]) const handleLeftClick = () =&amp;gt; { setAll(allClicks.concat(&amp;#39;L&amp;#39;)) setLeft(left + 1) } const handleRightClick = () =&amp;gt; { setAll(allClicks.concat(&amp;#39;R&amp;#39;)) setRight(right + 1) } return ( &amp;lt;div&amp;gt; {left} &amp;lt;button onClick={handleLeftClick}&amp;gt;left&amp;lt;/button&amp;gt; &amp;lt;button onClick={handleRightClick}&amp;gt;right&amp;lt;/button&amp;gt; {right} &amp;lt;p&amp;gt;{allClicks.</description>
     </item>
   </channel>
 </rss>
