@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Review_knowledge_terminal on My New Hugo Site</title>
+    <title>Review_knowledge_terminal on 阿雀的个人博客</title>
     <link>http://localhost:1313/tags/review_knowledge_terminal/</link>
-    <description>Recent content in Review_knowledge_terminal on My New Hugo Site</description>
+    <description>Recent content in Review_knowledge_terminal on 阿雀的个人博客</description>
     <generator>Hugo</generator>
     <language>en-us</language>
+    <copyright>Cynthia Ding</copyright>
     <lastBuildDate>Sat, 10 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/review_knowledge_terminal/index.xml" rel="self" type="application/rss+xml" />
     <item>

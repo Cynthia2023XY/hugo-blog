@@ -1,11 +1,12 @@
 <?xml-stylesheet href="/rss.xsl" type="text/xsl"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
+    <title>阿雀的个人博客</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <description>Recent content on 阿雀的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>Cynthia Ding</copyright>
     <lastBuildDate>Wed, 14 Aug 2024 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
@@ -18,7 +19,7 @@
         <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/posts/%E6%B5%8B%E8%AF%95/</guid>
-        <description>My New Hugo Site http://localhost:1313/posts/%E6%B5%8B%E8%AF%95/ -&lt;p&gt;纯文本可以正常上传&lt;/p&gt;
+        <description>阿雀的个人博客 http://localhost:1313/posts/%E6%B5%8B%E8%AF%95/ -&lt;p&gt;纯文本可以正常上传&lt;/p&gt;
 &lt;p&gt;标签样式不能正确解析
 #review/knowledge/code/practice&lt;/p&gt;
 &lt;h1 id=&#34;一级标题&#34;&gt;一级标题&lt;/h1&gt;
@@ -76,7 +77,7 @@
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;hr&gt;
-- http://localhost:1313/posts/%E6%B5%8B%E8%AF%95/ - </description>
+- http://localhost:1313/posts/%E6%B5%8B%E8%AF%95/ - Cynthia Ding</description>
         </item>
     
     
@@ -87,25 +88,25 @@
         <pubDate>Tue, 13 Aug 2024 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/posts/%E4%BC%AA%E7%B1%BB%E5%92%8C%E4%BC%AA%E5%85%83%E7%B4%A0%E5%8C%BA%E5%88%AB/</guid>
-        <description>My New Hugo Site http://localhost:1313/posts/%E4%BC%AA%E7%B1%BB%E5%92%8C%E4%BC%AA%E5%85%83%E7%B4%A0%E5%8C%BA%E5%88%AB/ -&lt;p&gt;#review/knowledge/code/css
+        <description>阿雀的个人博客 http://localhost:1313/posts/%E4%BC%AA%E7%B1%BB%E5%92%8C%E4%BC%AA%E5%85%83%E7%B4%A0%E5%8C%BA%E5%88%AB/ -&lt;p&gt;#review/knowledge/code/css
 #review/knowledge/八股&lt;/p&gt;
 &lt;h2 id=&#34;伪类和伪类元素--根本区别在于它们是否创造了新的元素&#34;&gt;伪类和伪类元素：  根本区别在于它们是否创造了新的元素&lt;/h2&gt;
 &lt;p&gt;CSS3 之后，为了区别伪类选择器和伪元素，在伪元素前加两个 ::&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;伪类：用于向某个选择器添加特殊的效果（没有创建新元素）&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;:&lt;span style=&#34;color:#a6e22e&#34;&gt;last-child&lt;/span&gt;     &lt;span style=&#34;color:#75715e&#34;&gt;/*选择元素最后一个孩子 */&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;:&lt;span style=&#34;color:#a6e22e&#34;&gt;first-child&lt;/span&gt;   &lt;span style=&#34;color:#75715e&#34;&gt;/*选择元素第一个孩子*/&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;:&lt;span style=&#34;color:#a6e22e&#34;&gt;nth-child&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;     &lt;span style=&#34;color:#75715e&#34;&gt;/*按照的几个孩子给它设置样式*
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;a:link {color:#FF0000}      /*未访问链接*/&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;:&lt;span style=&#34;color:#a6e22e&#34;&gt;visited&lt;/span&gt;   {&lt;span style=&#34;color:#66d9ef&#34;&gt;color&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;#00FF00&lt;/span&gt;}     &lt;span style=&#34;color:#75715e&#34;&gt;/*已访问的链接*/&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;:&lt;span style=&#34;color:#a6e22e&#34;&gt;hover&lt;/span&gt;  {&lt;span style=&#34;color:#66d9ef&#34;&gt;color&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;#FF00FF&lt;/span&gt;}      &lt;span style=&#34;color:#75715e&#34;&gt;/*鼠标移动到链接上*/&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;:&lt;span style=&#34;color:#a6e22e&#34;&gt;active&lt;/span&gt; {&lt;span style=&#34;color:#66d9ef&#34;&gt;color&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;#0000FF&lt;/span&gt;}      &lt;span style=&#34;color:#75715e&#34;&gt;/*选定的链接*/&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;:&lt;span style=&#34;color:#707a7c&#34;&gt;last-child&lt;/span&gt;     &lt;span style=&#34;color:#228b22&#34;&gt;/*选择元素最后一个孩子 */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;:&lt;span style=&#34;color:#707a7c&#34;&gt;first-child&lt;/span&gt;   &lt;span style=&#34;color:#228b22&#34;&gt;/*选择元素第一个孩子*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;:&lt;span style=&#34;color:#707a7c&#34;&gt;nth-child&lt;/span&gt;(&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;1&lt;/span&gt;)     &lt;span style=&#34;color:#228b22&#34;&gt;/*按照的几个孩子给它设置样式*
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;a:link {color:#FF0000}      /*未访问链接*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;a&lt;/span&gt;:&lt;span style=&#34;color:#707a7c&#34;&gt;visited&lt;/span&gt;   {&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;color&lt;/span&gt;:&lt;span style=&#34;color:#b452cd&#34;&gt;#00FF00&lt;/span&gt;}     &lt;span style=&#34;color:#228b22&#34;&gt;/*已访问的链接*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;a&lt;/span&gt;:&lt;span style=&#34;color:#707a7c&#34;&gt;hover&lt;/span&gt;  {&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;color&lt;/span&gt;:&lt;span style=&#34;color:#b452cd&#34;&gt;#FF00FF&lt;/span&gt;}      &lt;span style=&#34;color:#228b22&#34;&gt;/*鼠标移动到链接上*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;a&lt;/span&gt;:&lt;span style=&#34;color:#707a7c&#34;&gt;active&lt;/span&gt; {&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;color&lt;/span&gt;:&lt;span style=&#34;color:#b452cd&#34;&gt;#0000FF&lt;/span&gt;}      &lt;span style=&#34;color:#228b22&#34;&gt;/*选定的链接*/&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;伪元素：创建了html中不存在的元素，用于将特殊的效果添加到某些选择器&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;::&lt;span style=&#34;color:#a6e22e&#34;&gt;before&lt;/span&gt;{}      &lt;span style=&#34;color:#75715e&#34;&gt;/*选择器在被选元素的前面插入内容定义css，使用content属性来指定要插入的内容*/&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;::&lt;span style=&#34;color:#a6e22e&#34;&gt;after&lt;/span&gt;{}       &lt;span style=&#34;color:#75715e&#34;&gt;/*选择器在被选元素的后面插入内容和定义css，使用content属性来指定要插入的内容*/&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;:&lt;span style=&#34;color:#a6e22e&#34;&gt;first-letter&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;/*选择该元素内容的首字母*/&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;:&lt;span style=&#34;color:#a6e22e&#34;&gt;first-line&lt;/span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;/*选择该元素的内容的首行*/&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;::&lt;span style=&#34;color:#a6e22e&#34;&gt;selection&lt;/span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;/*选择被用户选取的元素部分*/&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;- http://localhost:1313/posts/%E4%BC%AA%E7%B1%BB%E5%92%8C%E4%BC%AA%E5%85%83%E7%B4%A0%E5%8C%BA%E5%88%AB/ - </description>
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;::&lt;span style=&#34;color:#707a7c&#34;&gt;before&lt;/span&gt;{}      &lt;span style=&#34;color:#228b22&#34;&gt;/*选择器在被选元素的前面插入内容定义css，使用content属性来指定要插入的内容*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;::&lt;span style=&#34;color:#707a7c&#34;&gt;after&lt;/span&gt;{}       &lt;span style=&#34;color:#228b22&#34;&gt;/*选择器在被选元素的后面插入内容和定义css，使用content属性来指定要插入的内容*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;:&lt;span style=&#34;color:#707a7c&#34;&gt;first-letter&lt;/span&gt;    &lt;span style=&#34;color:#228b22&#34;&gt;/*选择该元素内容的首字母*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;:&lt;span style=&#34;color:#707a7c&#34;&gt;first-line&lt;/span&gt;        &lt;span style=&#34;color:#228b22&#34;&gt;/*选择该元素的内容的首行*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;::&lt;span style=&#34;color:#707a7c&#34;&gt;selection&lt;/span&gt;        &lt;span style=&#34;color:#228b22&#34;&gt;/*选择被用户选取的元素部分*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;- http://localhost:1313/posts/%E4%BC%AA%E7%B1%BB%E5%92%8C%E4%BC%AA%E5%85%83%E7%B4%A0%E5%8C%BA%E5%88%AB/ - Cynthia Ding</description>
         </item>
     
     
@@ -116,10 +117,10 @@
         <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/posts/mac%E6%9F%A5%E7%9C%8B%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6/</guid>
-        <description>My New Hugo Site http://localhost:1313/posts/mac%E6%9F%A5%E7%9C%8B%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6/ -&lt;p&gt;#review/problem #review/fixed
+        <description>阿雀的个人博客 http://localhost:1313/posts/mac%E6%9F%A5%E7%9C%8B%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6/ -&lt;p&gt;#review/problem #review/fixed
 #review/knowledge/computer
 显示隐藏文件快捷键：Command + Shift + . 在Finder打开你想要查看隐藏文件的文件夹，然后使用快捷键Command + Shift + .，即可查看当下文件夹中的隐藏文件。 要恢复隐藏文件的话再次按shift+cmmand+. ，即可恢复文件的隐藏状态。&lt;/p&gt;
-- http://localhost:1313/posts/mac%E6%9F%A5%E7%9C%8B%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6/ - </description>
+- http://localhost:1313/posts/mac%E6%9F%A5%E7%9C%8B%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6/ - Cynthia Ding</description>
         </item>
     
     
@@ -130,9 +131,9 @@
         <pubDate>Sat, 10 Aug 2024 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/posts/mac%E7%BB%88%E7%AB%AF%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-3%E6%8B%96%E5%8A%A8%E6%96%87%E4%BB%B6%E5%BF%AB%E9%80%9F%E5%89%8D%E5%BE%80/</guid>
-        <description>My New Hugo Site http://localhost:1313/posts/mac%E7%BB%88%E7%AB%AF%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-3%E6%8B%96%E5%8A%A8%E6%96%87%E4%BB%B6%E5%BF%AB%E9%80%9F%E5%89%8D%E5%BE%80/ -&lt;p&gt;#review/knowledge/terminal
+        <description>阿雀的个人博客 http://localhost:1313/posts/mac%E7%BB%88%E7%AB%AF%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-3%E6%8B%96%E5%8A%A8%E6%96%87%E4%BB%B6%E5%BF%AB%E9%80%9F%E5%89%8D%E5%BE%80/ -&lt;p&gt;#review/knowledge/terminal
 直接将待编辑文件或文件夹拖入终端中即可，它会自动把绝对路径提取出来，实际情况下常用的也是这种自动提取或手动复制的方法&lt;/p&gt;
-- http://localhost:1313/posts/mac%E7%BB%88%E7%AB%AF%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-3%E6%8B%96%E5%8A%A8%E6%96%87%E4%BB%B6%E5%BF%AB%E9%80%9F%E5%89%8D%E5%BE%80/ - </description>
+- http://localhost:1313/posts/mac%E7%BB%88%E7%AB%AF%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-3%E6%8B%96%E5%8A%A8%E6%96%87%E4%BB%B6%E5%BF%AB%E9%80%9F%E5%89%8D%E5%BE%80/ - Cynthia Ding</description>
         </item>
     
     
@@ -143,8 +144,8 @@
         <pubDate>Thu, 18 Jul 2019 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/posts/my-first-post/</guid>
-        <description>My New Hugo Site http://localhost:1313/posts/my-first-post/ -&lt;h1 id=&#34;hugo-on-vercel&#34;&gt;Hugo on Vercel&lt;/h1&gt;
-- http://localhost:1313/posts/my-first-post/ - </description>
+        <description>阿雀的个人博客 http://localhost:1313/posts/my-first-post/ -&lt;h1 id=&#34;hugo-on-vercel&#34;&gt;Hugo on Vercel&lt;/h1&gt;
+- http://localhost:1313/posts/my-first-post/ - Cynthia Ding</description>
         </item>
     
     
@@ -155,7 +156,7 @@
         <pubDate>Sun, 18 Mar 2018 02:01:58 +0530</pubDate>
         
         <guid>http://localhost:1313/posts/post-1/</guid>
-        <description>My New Hugo Site http://localhost:1313/posts/post-1/ -&lt;p&gt;You have a to-do list that scrolls on for days. You are managing multiple projects, getting lots of email and messages on different messaging systems, managing finances and personal health habits and so much more.&lt;/p&gt;
+        <description>阿雀的个人博客 http://localhost:1313/posts/post-1/ -&lt;p&gt;You have a to-do list that scrolls on for days. You are managing multiple projects, getting lots of email and messages on different messaging systems, managing finances and personal health habits and so much more.&lt;/p&gt;
 &lt;p&gt;It all keeps piling up, and it can feel overwhelming.&lt;/p&gt;
 &lt;p&gt;How do you keep up with it all? How do you find focus and peace and get stuff accomplished when you have too much on your plate?&lt;/p&gt;
 &lt;p&gt;In this primer, I’ll look at some key strategies and tactics for taking on an overloaded life with an open heart, lots of energy, and a smile on your face.&lt;/p&gt;
@@ -189,7 +190,7 @@
 &lt;p&gt;Think of it as a settling of the mind. A new mode of being. A mindfulness practice (which means you won’t be perfect at it).&lt;/p&gt;
 &lt;p&gt;As you practice mindful focus, you’ll learn to practice doing things with an open heart, with curiosity and gratitude, and even joy. Try these one at a time as you get to do each task on your Short List.&lt;/p&gt;
 &lt;p&gt;You’ll find that you’re not so overloaded, but that each task is just perfect for that moment. And that’s a completely new relationship with the work that you do, and a new relationship with life.&lt;/p&gt;
-- http://localhost:1313/posts/post-1/ - </description>
+- http://localhost:1313/posts/post-1/ - Cynthia Ding</description>
         </item>
     
     
