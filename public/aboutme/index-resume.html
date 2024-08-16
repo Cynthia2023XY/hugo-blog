@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的简历</title>
+    <link rel="stylesheet" href="./resume.css">
+
+    <meta charset="utf-8" />
+    <meta name="X-UA-Compatible" content="IE=edge" />
+    <meta name="google-site-verification" content="G-XXXXXXXXXX" />
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+      name="viewport"
+    />
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="description" content="" />
+    <meta name="renderer" content="webkit" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <nav
+        id="navBar"
+        class="navbar sticky-top navbar-light single-column-nav-container"
+      >
+        <div id="navBackground" class="nav-background"></div>
+        <div class="container container-narrow nav-content">
+          <button
+            id="nav_dropdown_btn"
+            class="nav-dropdown-toggle"
+            type="button"
+            v-on:click="toggleDrawer"
+          >
+            <i class="material-icons"> menu </i>
+          </button>
+          <a id="navTitle" class="navbar-brand" href="http://localhost:1313/">
+            阿雀的个人博客
+          </a>
+
+          <button
+            type="button"
+            class="nav-darkmode-toggle"
+            id="darkModeToggleButton2"
+          >
+            <i class="material-icons" id="darkModeToggleIcon2"> dark_mode </i>
+          </button>
+        </div>
+      </nav>
+    <div class="container">
+      <!-- Header Section -->
+      <div class="header">
+        <img src="./fileDXY/白底散发.jpg" alt="Your Photo" />
+        <h1>丁欣宜</h1>
+        <p>西安交通大学 25届本科毕业生</p>
+        <p>
+          <a href="mailto:cynthia.xy.ding@gmail.com"
+            >cynthia.xy.ding@gmail.com</a
+          >
+          | <span id="phoneNumber">18909134502</span> |
+          <a href="https://github.com/Cynthia2023XY">github主页</a>
+        </p>
+      </div>
+
+      <!-- Education Section -->
+      <div class="section">
+        <h2>Education</h2>
+        <div class="item">
+          <h3>Master of Science in Computer Science</h3>
+          <div class="date">Sep 2020 - Jun 2022</div>
+          <p>University Name, City, Country</p>
+        </div>
+        <div class="item">
+          <h3>Bachelor of Science in Information Technology</h3>
+          <div class="date">Sep 2016 - Jun 2020</div>
+          <p>University Name, City, Country</p>
+        </div>
+      </div>
+
+      <!-- Internship Section -->
+      <div class="section">
+        <h2>Internship Experience</h2>
+        <div class="item">
+          <h3>Software Development Intern</h3>
+          <div class="date">Jun 2021 - Aug 2021</div>
+          <p>Company Name, City, Country</p>
+          <p>
+            Worked on developing and maintaining web applications using HTML,
+            CSS, JavaScript, and Python. Improved the performance of key
+            applications by 30% through code optimization.
+          </p>
+        </div>
+      </div>
+
+      <!-- Work Experience Section -->
+      <div class="section">
+        <h2>Work Experience</h2>
+        <div class="item">
+          <h3>Junior Software Engineer</h3>
+          <div class="date">Jul 2022 - Present</div>
+          <p>Company Name, City, Country</p>
+          <p>
+            Developing software solutions, collaborating with cross-functional
+            teams, and contributing to the design and implementation of new
+            features. Led a team project that reduced system downtime by 25%.
+          </p>
+        </div>
+      </div>
+
+      <!-- School Experience Section -->
+      <div class="section">
+        <h2>School Experience</h2>
+        <div class="item">
+          <h3>Junior Software Engineer</h3>
+          <div class="date">Jul 2022 - Present</div>
+          <p>Company Name, City, Country</p>
+          <p>
+            Developing software solutions, collaborating with cross-functional
+            teams, and contributing to the design and implementation of new
+            features. Led a team project that reduced system downtime by 25%.
+          </p>
+        </div>
+
+        <!-- Language Skill Section -->
+        <div class="section">
+          <h2>Language Skills</h2>
+          <div class="item">
+            <h3>Junior Software Engineer</h3>
+            <div class="date">Jul 2022 - Present</div>
+            <p>Company Name, City, Country</p>
+            <p>
+              Developing software solutions, collaborating with cross-functional
+              teams, and contributing to the design and implementation of new
+              features. Led a team project that reduced system downtime by 25%.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Download Resume Button -->
+    <a
+      href="./fileDXY/丁欣宜-秋招-西安交通大学-简历CN.pdf"
+      download="DXY中文简历.pdf"
+      class="download-button-ZH"
+      >下载中文简历</a
+    >
+    <a
+      href="./fileDXY/丁欣宜-秋招-西安交通大学-简历CN.pdf"
+      download="DXY英文简历.pdf"
+      class="download-button-EN"
+      >下载英文简历</a
+    >
+  </body>
+</html>

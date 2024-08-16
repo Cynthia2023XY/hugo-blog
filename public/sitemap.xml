@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!-- 这个文件是一个 sitemap.xml 文件，用于搜索引擎优化 (SEO)。 -->
+<!-- 帮助搜索引擎（如 Google、Bing 等）更好地了解你的网站结构，并更有效地抓取和索引你的网站内容 -->
+<!-- sitemap.xml 文件包含了你网站上所有重要页面的 URL 以及这些页面的元数据（如最后修改时间）。 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
@@ -60,6 +63,9 @@
     <lastmod>2018-03-18T02:01:58+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/post-1/</loc>
+    <lastmod>2018-03-18T02:01:58+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/aboutme/</loc>
     <lastmod>2018-03-18T02:01:58+05:30</lastmod>
   </url>
 </urlset>

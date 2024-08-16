@@ -32,10 +32,8 @@
 &lt;p&gt;分割线测试&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;普通文本测试&lt;/p&gt;
-&lt;p&gt;==高亮文本测试==&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;加粗文本测试&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;斜体文本测试&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;!-- raw HTML omitted --&gt;下划线文本测试&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;p&gt;&lt;del&gt;删除线文本测试&lt;/del&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;引用测试&lt;/p&gt;
