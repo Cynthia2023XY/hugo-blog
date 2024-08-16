@@ -1,0 +1,198 @@
+<?xml-stylesheet href="/rss.xsl" type="text/xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>阿雀的个人博客</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on 阿雀的个人博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Cynthia Ding</copyright>
+    <lastBuildDate>Wed, 14 Aug 2024 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+        <item>
+        <title>本文为obsidian样式有效性测试</title>
+        <link>http://localhost:1313/posts/%E6%B5%8B%E8%AF%95/</link>
+        <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/posts/%E6%B5%8B%E8%AF%95/</guid>
+        <description>阿雀的个人博客 http://localhost:1313/posts/%E6%B5%8B%E8%AF%95/ -&lt;p&gt;纯文本可以正常上传&lt;/p&gt;
+&lt;p&gt;标签样式不能正确解析
+#review/knowledge/code/practice&lt;/p&gt;
+&lt;h1 id=&#34;一级标题&#34;&gt;一级标题&lt;/h1&gt;
+&lt;h2 id=&#34;二级标题&#34;&gt;二级标题&lt;/h2&gt;
+&lt;h3 id=&#34;三级标题&#34;&gt;三级标题&lt;/h3&gt;
+&lt;h4 id=&#34;四级标题&#34;&gt;四级标题&lt;/h4&gt;
+&lt;h5 id=&#34;五级标题&#34;&gt;五级标题&lt;/h5&gt;
+&lt;h6 id=&#34;六级标题&#34;&gt;六级标题&lt;/h6&gt;
+&lt;hr&gt;
+&lt;p&gt;分割线测试&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;普通文本测试&lt;/p&gt;
+&lt;p&gt;==高亮文本测试==&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;加粗文本测试&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;斜体文本测试&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;下划线文本测试&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;删除线文本测试&lt;/del&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;引用测试&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;代码块渲染测试&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;const App = () =&amp;gt; {
+  const [left, setLeft] = useState(0)
+  const [right, setRight] = useState(0)
+
+  const [allClicks, setAll] = useState([])
+
+
+  const handleLeftClick = () =&amp;gt; {
+    setAll(allClicks.concat(&amp;#39;L&amp;#39;))
+    setLeft(left + 1)
+  }
+
+
+  const handleRightClick = () =&amp;gt; {
+    setAll(allClicks.concat(&amp;#39;R&amp;#39;))
+    setRight(right + 1)
+  }
+
+  return (
+    &amp;lt;div&amp;gt;
+      {left}
+      &amp;lt;button onClick={handleLeftClick}&amp;gt;left&amp;lt;/button&amp;gt;
+      &amp;lt;button onClick={handleRightClick}&amp;gt;right&amp;lt;/button&amp;gt;
+      {right}
+
+      &amp;lt;p&amp;gt;{allClicks.join(&amp;#39; &amp;#39;)}&amp;lt;/p&amp;gt;
+    &amp;lt;/div&amp;gt;
+  )
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;p&gt;图片测试
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/Pasted%20image%2020240814200212.png&#34; width=&#34;202&#34;&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+- http://localhost:1313/posts/%E6%B5%8B%E8%AF%95/ - Cynthia Ding</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>CSS中伪类和伪类元素的区别</title>
+        <link>http://localhost:1313/posts/%E4%BC%AA%E7%B1%BB%E5%92%8C%E4%BC%AA%E5%85%83%E7%B4%A0%E5%8C%BA%E5%88%AB/</link>
+        <pubDate>Tue, 13 Aug 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/posts/%E4%BC%AA%E7%B1%BB%E5%92%8C%E4%BC%AA%E5%85%83%E7%B4%A0%E5%8C%BA%E5%88%AB/</guid>
+        <description>阿雀的个人博客 http://localhost:1313/posts/%E4%BC%AA%E7%B1%BB%E5%92%8C%E4%BC%AA%E5%85%83%E7%B4%A0%E5%8C%BA%E5%88%AB/ -&lt;p&gt;#review/knowledge/code/css
+#review/knowledge/八股&lt;/p&gt;
+&lt;h2 id=&#34;伪类和伪类元素--根本区别在于它们是否创造了新的元素&#34;&gt;伪类和伪类元素：  根本区别在于它们是否创造了新的元素&lt;/h2&gt;
+&lt;p&gt;CSS3 之后，为了区别伪类选择器和伪元素，在伪元素前加两个 ::&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;伪类：用于向某个选择器添加特殊的效果（没有创建新元素）&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;:&lt;span style=&#34;color:#707a7c&#34;&gt;last-child&lt;/span&gt;     &lt;span style=&#34;color:#228b22&#34;&gt;/*选择元素最后一个孩子 */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;:&lt;span style=&#34;color:#707a7c&#34;&gt;first-child&lt;/span&gt;   &lt;span style=&#34;color:#228b22&#34;&gt;/*选择元素第一个孩子*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;:&lt;span style=&#34;color:#707a7c&#34;&gt;nth-child&lt;/span&gt;(&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;1&lt;/span&gt;)     &lt;span style=&#34;color:#228b22&#34;&gt;/*按照的几个孩子给它设置样式*
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;a:link {color:#FF0000}      /*未访问链接*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;a&lt;/span&gt;:&lt;span style=&#34;color:#707a7c&#34;&gt;visited&lt;/span&gt;   {&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;color&lt;/span&gt;:&lt;span style=&#34;color:#b452cd&#34;&gt;#00FF00&lt;/span&gt;}     &lt;span style=&#34;color:#228b22&#34;&gt;/*已访问的链接*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;a&lt;/span&gt;:&lt;span style=&#34;color:#707a7c&#34;&gt;hover&lt;/span&gt;  {&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;color&lt;/span&gt;:&lt;span style=&#34;color:#b452cd&#34;&gt;#FF00FF&lt;/span&gt;}      &lt;span style=&#34;color:#228b22&#34;&gt;/*鼠标移动到链接上*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;a&lt;/span&gt;:&lt;span style=&#34;color:#707a7c&#34;&gt;active&lt;/span&gt; {&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;color&lt;/span&gt;:&lt;span style=&#34;color:#b452cd&#34;&gt;#0000FF&lt;/span&gt;}      &lt;span style=&#34;color:#228b22&#34;&gt;/*选定的链接*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;伪元素：创建了html中不存在的元素，用于将特殊的效果添加到某些选择器&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;::&lt;span style=&#34;color:#707a7c&#34;&gt;before&lt;/span&gt;{}      &lt;span style=&#34;color:#228b22&#34;&gt;/*选择器在被选元素的前面插入内容定义css，使用content属性来指定要插入的内容*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;::&lt;span style=&#34;color:#707a7c&#34;&gt;after&lt;/span&gt;{}       &lt;span style=&#34;color:#228b22&#34;&gt;/*选择器在被选元素的后面插入内容和定义css，使用content属性来指定要插入的内容*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;:&lt;span style=&#34;color:#707a7c&#34;&gt;first-letter&lt;/span&gt;    &lt;span style=&#34;color:#228b22&#34;&gt;/*选择该元素内容的首字母*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;:&lt;span style=&#34;color:#707a7c&#34;&gt;first-line&lt;/span&gt;        &lt;span style=&#34;color:#228b22&#34;&gt;/*选择该元素的内容的首行*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;::&lt;span style=&#34;color:#707a7c&#34;&gt;selection&lt;/span&gt;        &lt;span style=&#34;color:#228b22&#34;&gt;/*选择被用户选取的元素部分*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;- http://localhost:1313/posts/%E4%BC%AA%E7%B1%BB%E5%92%8C%E4%BC%AA%E5%85%83%E7%B4%A0%E5%8C%BA%E5%88%AB/ - Cynthia Ding</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>mac查看隐藏文件的快捷键</title>
+        <link>http://localhost:1313/posts/mac%E6%9F%A5%E7%9C%8B%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6/</link>
+        <pubDate>Sun, 11 Aug 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/posts/mac%E6%9F%A5%E7%9C%8B%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6/</guid>
+        <description>阿雀的个人博客 http://localhost:1313/posts/mac%E6%9F%A5%E7%9C%8B%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6/ -&lt;p&gt;#review/problem #review/fixed
+#review/knowledge/computer
+显示隐藏文件快捷键：Command + Shift + . 在Finder打开你想要查看隐藏文件的文件夹，然后使用快捷键Command + Shift + .，即可查看当下文件夹中的隐藏文件。 要恢复隐藏文件的话再次按shift+cmmand+. ，即可恢复文件的隐藏状态。&lt;/p&gt;
+- http://localhost:1313/posts/mac%E6%9F%A5%E7%9C%8B%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6/ - Cynthia Ding</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>mac终端如何快速前往某个文件夹路径：直接拖动</title>
+        <link>http://localhost:1313/posts/mac%E7%BB%88%E7%AB%AF%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-3%E6%8B%96%E5%8A%A8%E6%96%87%E4%BB%B6%E5%BF%AB%E9%80%9F%E5%89%8D%E5%BE%80/</link>
+        <pubDate>Sat, 10 Aug 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/posts/mac%E7%BB%88%E7%AB%AF%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-3%E6%8B%96%E5%8A%A8%E6%96%87%E4%BB%B6%E5%BF%AB%E9%80%9F%E5%89%8D%E5%BE%80/</guid>
+        <description>阿雀的个人博客 http://localhost:1313/posts/mac%E7%BB%88%E7%AB%AF%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-3%E6%8B%96%E5%8A%A8%E6%96%87%E4%BB%B6%E5%BF%AB%E9%80%9F%E5%89%8D%E5%BE%80/ -&lt;p&gt;#review/knowledge/terminal
+直接将待编辑文件或文件夹拖入终端中即可，它会自动把绝对路径提取出来，实际情况下常用的也是这种自动提取或手动复制的方法&lt;/p&gt;
+- http://localhost:1313/posts/mac%E7%BB%88%E7%AB%AF%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-3%E6%8B%96%E5%8A%A8%E6%96%87%E4%BB%B6%E5%BF%AB%E9%80%9F%E5%89%8D%E5%BE%80/ - Cynthia Ding</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>My First Post</title>
+        <link>http://localhost:1313/posts/my-first-post/</link>
+        <pubDate>Thu, 18 Jul 2019 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/posts/my-first-post/</guid>
+        <description>阿雀的个人博客 http://localhost:1313/posts/my-first-post/ -&lt;h1 id=&#34;hugo-on-vercel&#34;&gt;Hugo on Vercel&lt;/h1&gt;
+- http://localhost:1313/posts/my-first-post/ - Cynthia Ding</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>When You Have Too Much to Do</title>
+        <link>http://localhost:1313/posts/post-1/</link>
+        <pubDate>Sun, 18 Mar 2018 02:01:58 +0530</pubDate>
+        
+        <guid>http://localhost:1313/posts/post-1/</guid>
+        <description>阿雀的个人博客 http://localhost:1313/posts/post-1/ -&lt;p&gt;You have a to-do list that scrolls on for days. You are managing multiple projects, getting lots of email and messages on different messaging systems, managing finances and personal health habits and so much more.&lt;/p&gt;
+&lt;p&gt;It all keeps piling up, and it can feel overwhelming.&lt;/p&gt;
+&lt;p&gt;How do you keep up with it all? How do you find focus and peace and get stuff accomplished when you have too much on your plate?&lt;/p&gt;
+&lt;p&gt;In this primer, I’ll look at some key strategies and tactics for taking on an overloaded life with an open heart, lots of energy, and a smile on your face.&lt;/p&gt;
+&lt;h2 id=&#34;the-first-step-triage&#34;&gt;The First Step: Triage&lt;/h2&gt;
+&lt;p&gt;Whether you’re just starting your day, or you’re in the middle of the chaos and just need to find some sanity … the first step is to get into triage mode.&lt;/p&gt;
+&lt;p&gt;Triage, as you probably know, is sorting through the chaos to prioritize: what needs to be done now, what needs to be done today, what needs to be done this week, and what can wait? You’re looking at urgency, but also what’s meaningful and important.&lt;/p&gt;
+&lt;p&gt;Here’s what you might do:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pick out the things that need to be done today. Start a Short List for things you’re going to do today. That might be important tasks for big projects, urgent tasks that could result in damage if you don’t act, smaller admin tasks that you really should take care of today, and responding to important messages. I would recommend being ruthless and cutting out as much as you can, having just 5 things on your plate if that’s at all possible. Not everything needs to be done today, and not every email needs to be responded to.&lt;/li&gt;
+&lt;li&gt;Push some things to tomorrow and the rest of the week. If you have deadlines that can be pushed back (or renegotiated), do that. Spread the work out over the week, even into next week. What needs to be done tomorrow? What can wait a day or two longer?&lt;/li&gt;
+&lt;li&gt;Eliminate what you can. That might mean just not replying to some messages that aren’t that important and don’t really require a reply. It might mean telling some people that you can’t take on this project after all, or that you need to get out of the commitment that you said you’d do. Yes, this is uncomfortable. For now, just put them on a list called, “To Not Do,” and plan to figure out how to get out of them later.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;OK, you have some breathing room and a manageable list now! Let’s shrink that down even further and just pick one thing.&lt;/p&gt;
+&lt;h2 id=&#34;next-focus-on-one-thing&#34;&gt;Next: Focus on One Thing&lt;/h2&gt;
+&lt;p&gt;With a lot on your plate, it’s hard to pick one thing to focus on. But that’s exactly what I’m going to ask you to do.&lt;/p&gt;
+&lt;p&gt;Pick one thing, and give it your focus. Yes, there are a lot of other things you can focus on. Yes, they’re stressing you out and making it hard to focus. But think about it this way: if you allow it all to be in your head all the time, that will always be your mode of being. You’ll always be thinking about everything, stressing out about it all, with a frazzled mind … unless you start shifting.&lt;/p&gt;
+&lt;p&gt;The shift:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pick something to focus on. Look at the triaged list from the first section … if you have 5-6 things on this Short List, you can assess whether there’s any super urgent, time-sensitive things you need to take care of. If there are, pick one of them. If not, pick the most important one — probably the one you have been putting off doing.&lt;/li&gt;
+&lt;li&gt;Clear everything else away. Just for a little bit. Close all browser tabs, turn off notifications, close open applications, put your phone away.&lt;/li&gt;
+&lt;li&gt;Put that one task before you, and allow yourself to be with it completely. Pour yourself into it. Think of it as a practice, of letting go (of everything else), of focus, of radical simplicity.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When you’re done (or after 15-20 minutes have gone by at least), you can switch to something else. But don’t allow yourself to switch until then.&lt;/p&gt;
+&lt;p&gt;By closing off all exits, by choosing one thing, by giving yourself completely to that thing … you’re now in a different mode that isn’t so stressful or spread thin. You’ve started a shift that will lead to focus and sanity.&lt;/p&gt;
+&lt;h2 id=&#34;third-schedule-time-to-simplify&#34;&gt;Third: Schedule Time to Simplify&lt;/h2&gt;
+&lt;p&gt;Remember the To Not Do list above? Schedule some time this week to start reducing your projects, saying no to people, getting out of commitments, crossing stuff off your task list … so that you can have some sanity back.&lt;/p&gt;
+&lt;p&gt;There are lots of little things that you’ve said “yes” to that you probably shouldn’t have. That’s why you’re overloaded. Protect your more important work, and your time off, and your peace of mind, by saying “no” to things that aren’t as important.&lt;/p&gt;
+&lt;p&gt;Schedule the time to simplify — you don’t have to do it today, but sometime soon — and you can then not have to worry about the things on your To Not Do list until then.&lt;/p&gt;
+&lt;h2 id=&#34;fourth-practice-mindful-focus&#34;&gt;Fourth: Practice Mindful Focus&lt;/h2&gt;
+&lt;p&gt;Go through the rest of the day with an attitude of “mindful focus.” That means that you are doing one thing at a time, being as present as you can, switching as little as you can.&lt;/p&gt;
+&lt;p&gt;Think of it as a settling of the mind. A new mode of being. A mindfulness practice (which means you won’t be perfect at it).&lt;/p&gt;
+&lt;p&gt;As you practice mindful focus, you’ll learn to practice doing things with an open heart, with curiosity and gratitude, and even joy. Try these one at a time as you get to do each task on your Short List.&lt;/p&gt;
+&lt;p&gt;You’ll find that you’re not so overloaded, but that each task is just perfect for that moment. And that’s a completely new relationship with the work that you do, and a new relationship with life.&lt;/p&gt;
+- http://localhost:1313/posts/post-1/ - Cynthia Ding</description>
+        </item>
+    
+    
+  </channel>
+</rss> 

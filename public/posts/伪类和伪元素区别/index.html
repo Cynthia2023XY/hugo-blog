@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<title>CSS中伪类和伪类元素的区别</title>
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="G-XXXXXXXXXX">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="本文介绍了CSS中伪类和伪类元素的根本区别">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<meta property="og:url" content="http://localhost:1313/posts/%E4%BC%AA%E7%B1%BB%E5%92%8C%E4%BC%AA%E5%85%83%E7%B4%A0%E5%8C%BA%E5%88%AB/">
+  <meta property="og:site_name" content="阿雀的个人博客">
+  <meta property="og:title" content="CSS中伪类和伪类元素的区别">
+  <meta property="og:description" content="本文介绍了CSS中伪类和伪类元素的根本区别">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-08-13T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-08-13T00:00:00+00:00">
+    <meta property="article:tag" content="Review_knowledge_code_css">
+    <meta property="article:tag" content="Review_knowledge_八股">
+
+
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="CSS中伪类和伪类元素的区别">
+  <meta name="twitter:description" content="本文介绍了CSS中伪类和伪类元素的根本区别">
+
+
+
+
+
+
+
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-XXXXXXXXXX');
+        }
+      </script>
+    
+  
+
+
+
+
+
+
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "abcdefghzd");
+</script>
+
+
+
+  
+
+
+
+
+
+
+      <script src="/js/toc.js"></script>
+    
+    <link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="/scss/dark-mode.min.cb53f1bee2b8900cb4f082afbf00175d6618f281cf9a2fe8619e3b52d20b5721.css" integrity="sha256-y1PxvuK4kAy08IKvvwAXXWYY8oHPmi/oYZ47UtILVyE=" media="screen">
+
+
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Material+Icons">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    	<div id="app"><div class="single-column-drawer-container" id="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                    
+                
+                
+                
+                <a class="a-block drawer-menu-item active" href="/posts">
+                    档案库
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/categories">
+                    文章分类
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/tags">
+                    标签查找
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/index.xml">
+                    RSS订阅
+                </a>
+                
+            
+            
+            <div class="toc">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- 目录 -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#%e4%bc%aa%e7%b1%bb%e5%92%8c%e4%bc%aa%e7%b1%bb%e5%85%83%e7%b4%a0--%e6%a0%b9%e6%9c%ac%e5%8c%ba%e5%88%ab%e5%9c%a8%e4%ba%8e%e5%ae%83%e4%bb%ac%e6%98%af%e5%90%a6%e5%88%9b%e9%80%a0%e4%ba%86%e6%96%b0%e7%9a%84%e5%85%83%e7%b4%a0" class="nav-伪类和伪类元素--根本区别在于它们是否创造了新的元素">
+									伪类和伪类元素： 根本区别在于它们是否创造了新的元素
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div id="drawer-mask" v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav id="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div id="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a id="navTitle" class="navbar-brand" href="http://localhost:1313/">
+            阿雀的个人博客
+        </a>
+        
+        <button type="button" class="nav-darkmode-toggle" id="darkModeToggleButton2">
+            <i class="material-icons" id="darkModeToggleIcon2">
+                dark_mode
+            </i>
+        </button>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" id="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="http://localhost:1313/">
+        <div class="single-column-header-title">阿雀的个人博客</div>
+        
+        <div class="single-column-header-subtitle">（秋招限定版）</div>
+        
+
+    </a>
+</div>
+
+            <div id="content">
+                <div id="streamContainer" class="stream-container">
+
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+                
+            
+
+            <div class="post-head-wrapper"
+                
+                    
+                    
+                    style="background-image: url('http://localhost:1313/images/Pasted%20image%2020240814200212.png')"
+                    
+                
+            >
+                <div class="post-title">
+                    CSS中伪类和伪类元素的区别
+                    
+                    <div class="post-subtitle">
+                        本文介绍了CSS中伪类和伪类元素的根本区别
+                    </div>
+                    
+                    <div class="post-meta">
+                        
+                        <time itemprop="datePublished">
+                            2024-08-13 00:00
+                        </time>
+                        
+
+                        
+
+                        
+                            <i class="material-icons" style="">label</i>
+                            
+                                <a href="/tags/review_knowledge_code_css">review_knowledge_code_css</a>
+                                &nbsp;
+                            
+                                <a href="/tags/review_knowledge_%E5%85%AB%E8%82%A1">review_knowledge_八股</a>
+                                &nbsp;
+                            
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <p>#review/knowledge/code/css
+#review/knowledge/八股</p>
+<h2 id="伪类和伪类元素--根本区别在于它们是否创造了新的元素">伪类和伪类元素：  根本区别在于它们是否创造了新的元素</h2>
+<p>CSS3 之后，为了区别伪类选择器和伪元素，在伪元素前加两个 ::</p>
+<p><strong>伪类：用于向某个选择器添加特殊的效果（没有创建新元素）</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>:<span style="color:#707a7c">last-child</span>     <span style="color:#228b22">/*选择元素最后一个孩子 */</span>
+</span></span><span style="display:flex;"><span>:<span style="color:#707a7c">first-child</span>   <span style="color:#228b22">/*选择元素第一个孩子*/</span>
+</span></span><span style="display:flex;"><span>:<span style="color:#707a7c">nth-child</span>(<span style="color:#8b008b;font-weight:bold">1</span>)     <span style="color:#228b22">/*按照的几个孩子给它设置样式*
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22">a:link {color:#FF0000}      /*未访问链接*/</span>
+</span></span><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">a</span>:<span style="color:#707a7c">visited</span>   {<span style="color:#8b008b;font-weight:bold">color</span>:<span style="color:#b452cd">#00FF00</span>}     <span style="color:#228b22">/*已访问的链接*/</span>
+</span></span><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">a</span>:<span style="color:#707a7c">hover</span>  {<span style="color:#8b008b;font-weight:bold">color</span>:<span style="color:#b452cd">#FF00FF</span>}      <span style="color:#228b22">/*鼠标移动到链接上*/</span>
+</span></span><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">a</span>:<span style="color:#707a7c">active</span> {<span style="color:#8b008b;font-weight:bold">color</span>:<span style="color:#b452cd">#0000FF</span>}      <span style="color:#228b22">/*选定的链接*/</span>
+</span></span></code></pre></div><p><strong>伪元素：创建了html中不存在的元素，用于将特殊的效果添加到某些选择器</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>::<span style="color:#707a7c">before</span>{}      <span style="color:#228b22">/*选择器在被选元素的前面插入内容定义css，使用content属性来指定要插入的内容*/</span>
+</span></span><span style="display:flex;"><span>::<span style="color:#707a7c">after</span>{}       <span style="color:#228b22">/*选择器在被选元素的后面插入内容和定义css，使用content属性来指定要插入的内容*/</span>
+</span></span><span style="display:flex;"><span>:<span style="color:#707a7c">first-letter</span>    <span style="color:#228b22">/*选择该元素内容的首字母*/</span>
+</span></span><span style="display:flex;"><span>:<span style="color:#707a7c">first-line</span>        <span style="color:#228b22">/*选择该元素的内容的首行*/</span>
+</span></span><span style="display:flex;"><span>::<span style="color:#707a7c">selection</span>        <span style="color:#228b22">/*选择被用户选取的元素部分*/</span>
+</span></span></code></pre></div>
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;">最后修改于 2024-08-13</p>
+                    
+                </div>
+            </div>
+            
+            
+            <nav class="post-pagination">
+
+                
+                <a class="newer-posts" href="/posts/%E6%B5%8B%E8%AF%95/">
+			下回<br>本文为obsidian样式有效性测试
+                </a>
+                
+                
+                
+                <a class="older-posts" href="/posts/mac%E6%9F%A5%E7%9C%8B%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6/">
+			上回<br>mac查看隐藏文件的快捷键
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://giscus.app/client.js"
+        data-repo="username/repo"
+        data-repo-id="**************************"
+        data-category="General"
+        data-category-id="*********************"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+
+            </div>
+        </div>
+    </div>
+
+
+                    </div>
+            </div><div id="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="http://localhost:1313/">
+    
+        <div class="nav-title">
+            阿雀的个人博客
+        </div>
+        
+        <div class="nav-subtitle">
+            （秋招限定版）
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+                
+            
+            
+            
+            <a class="a-block nav-link-item active" href="/posts">
+                档案库
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/categories">
+                文章分类
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/tags">
+                标签查找
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/index.xml">
+                RSS订阅
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
+<br>
+移植自 <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	Cynthia Ding
+	
+
+    </div>
+    
+</div><div id="extraContainer" class="extra-container">
+    <div class="toc-wrapper">
+        
+
+        
+        <div class="toc">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- 目录 -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#%e4%bc%aa%e7%b1%bb%e5%92%8c%e4%bc%aa%e7%b1%bb%e5%85%83%e7%b4%a0--%e6%a0%b9%e6%9c%ac%e5%8c%ba%e5%88%ab%e5%9c%a8%e4%ba%8e%e5%ae%83%e4%bb%ac%e6%98%af%e5%90%a6%e5%88%9b%e9%80%a0%e4%ba%86%e6%96%b0%e7%9a%84%e5%85%83%e7%b4%a0" class="nav-伪类和伪类元素--根本区别在于它们是否创造了新的元素">
+									伪类和伪类元素： 根本区别在于它们是否创造了新的元素
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+        
+    </div>
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top"
+            :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        <a type="button" class="pagination-action" id="darkModeToggleButton">
+            <span class="material-icons pagination-action-icon" id="darkModeToggleIcon">
+                dark_mode
+            </span>
+        </a>
+        
+        
+    </div>
+</div>
+
+<div id="single-column-footer">
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
+<br>
+移植自 <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	Cynthia Ding
+	
+</div>
+            </div>
+    
+    <script src="/js/journal.js"></script></body>
+</html>

@@ -1,8 +1,11 @@
 ---
+date: 2024-08-10
 sr-due: 2026-02-16
 sr-interval: 586
 sr-ease: 290
 share: true
+title: "mac终端如何快速前往某个文件夹路径：直接拖动"
+description: 本文介绍了mac终端如何快速前往某个文件夹路径：直接拖动
 tags:
   - review_knowledge_terminal
 ---
