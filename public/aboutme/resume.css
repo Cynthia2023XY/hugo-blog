@@ -5,6 +5,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
+
+  --resume-color: #314450;
 }
 
 .container {
@@ -19,7 +21,7 @@ body {
 h1,
 h2,
 h3 {
-  color: #007acc;
+  color: var(--resume-color);
   margin-top: 0;
 }
 
@@ -61,7 +63,7 @@ h1 {
 }
 
 .section h2 {
-  border-bottom: 2px solid #007acc;
+  border-bottom: 2px solid #27353f;
   padding-bottom: 5px;
   margin-bottom: 20px;
 }
@@ -92,7 +94,7 @@ h1 {
 }
 
 /* Add download button styles */
-.download-button-ZH {
+/* .download-button-ZH {
   position: fixed;
   right: 10%;
   top: 50%;
@@ -129,5 +131,5 @@ h1 {
 .download-button-EN:hover {
   background-color: rgba(#1f3849,0.3);
   color: rgb(174, 213, 255);
-}
+} */
 
