@@ -8,13 +8,8 @@ categories:
   - Mac
 comment: false
 draft: false
-tags:
-  - review_knowledge_code_practice
-  - review_knowledge_computer
+tags: [VSCode,Mac]
 ---
-
-#review/knowledge/code/practice 
-#review/knowledge/computer 
 
 ### 全屏
 全屏：contol+command+F
@@ -32,6 +27,8 @@ tags:
 - Command + Shift + G 查找上一个
 - **Option + Enter 选中所有匹配项**
 - Command + D 向下选中相同内容，这样就可以一起编辑了
+
+
 ---
 ### 集成终端
 
@@ -56,7 +53,8 @@ tags:
 
 
 ---
-### 在苹果Mac电脑的键盘上**没有**Home, End, Page UP, Page DOWN这些键，可以通过用Fn键来组合得到同样的功能：
+### 在苹果Mac电脑的键盘上**没有**Home, End, Page UP, Page DOWN这些键
+可以通过用Fn键来组合得到同样的功能：
 
 - Home键=Fn+左方向、
 - End键=Fn+右方向、
