@@ -62,7 +62,8 @@ tags:
 - End键=Fn+右方向、
 - PageUP=Fn+上方向、
 - PageDOWN=Fn+下方向、向前
-- Delete=Fn+delete键。
+- Delete=Fn+delete键
+
 
 ---
 ### 完整版快捷键
