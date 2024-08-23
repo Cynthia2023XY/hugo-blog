@@ -66,11 +66,3 @@ tags:
 
 
 ---
-### 完整版快捷键
-![Pasted image 20240823152148.png](/images/Pasted%20image%2020240823152148.png)
-
-![Pasted image 20240823152241.png](/images/Pasted%20image%2020240823152241.png)
-
-![Pasted image 20240823152253.png](/images/Pasted%20image%2020240823152253.png)
-
-![Pasted image 20240823152311.png](/images/Pasted%20image%2020240823152311.png)
