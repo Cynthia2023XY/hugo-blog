@@ -3,7 +3,7 @@ date: 2024-08-23
 share: true
 title: js和ts区别
 description: js和ts区别
-categories: Obsidian
+categories: JS
 comment: false
 draft: false
 tags:
@@ -11,9 +11,9 @@ tags:
   - review_knowledge_code_ts
 ---
 
-
 #review/knowledge/code/js
 #review/knowledge/code/ts
+
 TypeScript 是 JavaScript 的超集，添加了静态类型系统和一些额外的语言特性，以提高代码的可读性、可维护性和安全性
 
 1. TypeScript 是由<u>微软开发和维护的开源项目</u>，与现有的 JavaScript 生态系统兼容，并且可以轻松地与其他 JavaScript 库和框架集成
